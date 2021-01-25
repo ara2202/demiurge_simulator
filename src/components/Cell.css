@@ -1,0 +1,51 @@
+.cell {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+}
+.cell:not(:first-child) {
+  margin-top: 4px;
+}
+
+.content {
+  display: flex;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: no-repeat center;
+}
+
+.image-alive {
+  background: url("../images/star.png") no-repeat center,
+    linear-gradient(180deg, #ffb800 0%, #fff7b0 100%);
+}
+
+.image-dead {
+  background-image: url("../images/skull.png"),
+    linear-gradient(180deg, #0d658a 0%, #b0ffb4 100%);
+}
+
+.image-liveIsBorn {
+  background-image: url("../images/duck.png"),
+    linear-gradient(180deg, #ad00ff 0%, #ffb0e9 100%);
+}
+
+.image-liveIsDead {
+  background-image: url("../images/skull.png"),
+    linear-gradient(180deg, #c90000 0%, #e86565 100%);
+}
+
+.text {
+  margin-left: 16px;
+}
+
+.header {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.0015em;
+}
